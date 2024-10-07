@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Alpy Salzburskie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .text-left, .text-right {
+            flex: 1;
+            padding: 10px;
+            text-align: justify;
+        }
+        .image-container {
+            position: relative;
+            flex-basis: 600px; 
+            flex-shrink: 0;
+            text-align: center;
+            margin: 0 20px;
+        }
+        .image-container img {
+            width: 100%; 
+            height: auto;
+            display: block;
+        }
+        .image-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alpy Salzburskie</h1>
+    <div class="container">
+        <div class="text-left">
+            <p>
+                Alpy Salzburskie (Salzburger Alpen) leżą w przeważającej mierze w Austrii i składają się na niewiele mniejszych 
+                masywów 
+                (niektórzy w ogóle nie wyróżniają nawet takiego alpejskiego regionu). Ich najwyższym szczytem jest Hoher Dachstein 
+                (2995 m n.p.m.)...
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="góry.jpg" alt="Alpy Salzburskie">
+            <h1 class="image-title">Alpy Salzburskie</h1>
+        </div>
+        <div class="text-right">
+            <p>
+                ...Tyrolu na zachodzie, po krańce górskiej Austrii na wschodzie. Masywy te cechują się malowniczym krajobrazem,
+                co sprawia, że są popularnym celem turystycznym. Wśród nich znajdują się rezerwaty przyrody i parki narodowe.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
